@@ -1,0 +1,40 @@
+[project]
+name = "plover-bulgarian"
+version = "1.0.0"
+description = "Plover plugin for Bulgarian"
+readme = "README.md"
+requires-python = ">= 3.7"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Samuel Lo", email = "me@samuello.io" },
+  { name = "Nikolay Nikolov", email = "nkonstnikolov@gmail.com"}
+]
+keywords = [
+  "plover",
+  "plover_plugin",
+]
+classifiers = [
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+  "plover >= 4.0.0.dev11",
+]
+
+[project.urls]
+repository = "https://github.com/vatnid/plover-bulgarian"
+homepage = "https://github.com/vatnid/plover-bulgarian"
+
+[tool.setuptools]
+packages = ["bulgarian"]
+
+[build-system]
+requires = [
+  "setuptools >= 61.0.0",
+  "wheel",
+]
+
+[project.entry-points."plover.system"]
+Bulgarian = "bulgarian.system"

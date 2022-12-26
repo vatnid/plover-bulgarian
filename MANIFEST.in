@@ -1,0 +1,2 @@
+include README.md
+include bulgarian/dictionaries/*.json
